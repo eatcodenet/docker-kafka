@@ -13,7 +13,7 @@ RUN wget -q -O - http://mirror.ox.ac.uk/sites/rsync.apache.org/kafka/$KAFKA_VERS
 
 ENV KAFKA_HOME /opt/kafka
 
-LABEL name="buildNumber" value="100"
+LABEL name="buildNumber" value="102"
 
 WORKDIR /opt/kafka
 
@@ -23,5 +23,5 @@ ADD start-kafka.sh /usr/bin/start-kafka.sh
 
 EXPOSE 9092
 
-ENTRYPOINT ["/usr/bin/start-kakfa.sh"]
+ENTRYPOINT ["/usr/bin/start-kafka.sh"]
 
