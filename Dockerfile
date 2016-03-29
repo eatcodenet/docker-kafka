@@ -18,6 +18,8 @@ EXPOSE 9092
 WORKDIR /opt/kafka
 
 # Add our own props which has one additional entry for zookeeper host
+LABEL name="buildNumber" value="4"
+
 ADD server.properties config/server.properties
 
 VOLUME ["/opt/kafka/config"]
