@@ -13,8 +13,7 @@ RUN wget -q -O - http://mirror.ox.ac.uk/sites/rsync.apache.org/kafka/$KAFKA_VERS
 
 ENV KAFKA_HOME /opt/kafka
 
-# Add our own props which has one additional entry for zookeeper host
-LABEL name="buildNumber" value="7"
+LABEL name="buildNumber" value="100"
 
 WORKDIR /opt/kafka
 
