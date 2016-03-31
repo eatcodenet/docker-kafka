@@ -13,7 +13,7 @@ RUN wget -q -O - http://mirror.ox.ac.uk/sites/rsync.apache.org/kafka/$KAFKA_VERS
 
 ENV KAFKA_HOME /opt/kafka
 
-LABEL name="buildNumber" value="102"
+LABEL name="buildNumber" value="100"
 
 WORKDIR /opt/kafka
 
