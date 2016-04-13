@@ -15,6 +15,8 @@ if [ ! -z "$ADVERTISED_PORT" ]; then
     sed -r -i "s/#(advertised.port)=(.*)/\1=$ADVERTISED_PORT/g" $KAFKA_HOME/config/server.properties
 fi
 
+# nasty hack only for dev
+sleep 3
+
 # Run Kafka
 $KAFKA_HOME/bin/kafka-server-start.sh $KAFKA_HOME/config/server.properties
-
