@@ -21,7 +21,10 @@ ADD server.properties config/server.properties
 
 ADD start-kafka.sh /usr/bin/start-kafka.sh
 
+ADD wait-for-it.sh /usr/bin/wait-for-it.sh
+
+ADD wait-for-zookeeper.sh /usr/bin/wait-for-zookeeper.sh
+
 EXPOSE 9092
 
-ENTRYPOINT ["/usr/bin/start-kafka.sh"]
-
+CMD /usr/bin/start-kafka.sh
